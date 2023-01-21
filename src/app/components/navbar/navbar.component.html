@@ -1,17 +1,20 @@
 <mat-toolbar color="primary">
 <mat-toolbar-row class="topNavRow">
-  <span class="font-extrabold">DAMN-CODE</span>
+  <span><button class="font-extrabold" routerLink="/">DAMN-CODE</button></span>
   <span class="example-spacer"></span>
-  <span routerLink="home"><button>Home</button></span>
-  <span routerLink="services"><button>Services</button></span>
-  <span routerLink="contact"><button>Contact Us</button></span>
-  <span routerLink="team"><button>Team</button></span>
+  <span routerLink="/"><button mat-button color="accent">Home</button></span>
+  <span routerLink="/services"><button mat-button color="accent">Services</button></span>
+  <span routerLink="/contact"><button mat-button color="accent">Contact Us</button></span>
+  <span routerLink="/team"><button mat-button color="accent">Team</button></span>
 </mat-toolbar-row>
 <mat-toolbar-row class="bottomNav" fxLayout="row-reverse">
-  <span><button mat-raised-button color="accent">Freelancers</button></span>
-  <span><button mat-raised-button color="accent">Quiz</button></span>
-  <span><button mat-raised-button color="accent">Rank Tables</button></span>
-  <span><button mat-raised-button color="accent">Tutorials</button></span>
+  <span><button mat-raised-button color="accent" routerLink="freelancers">Freelancers</button></span>
+  <span><button mat-raised-button color="accent" routerLink="quiz">Quiz</button></span>
+  <span><button mat-raised-button color="accent" routerLink="ranklist">Code Masters</button></span>
+  <span><button mat-raised-button color="accent" routerLink="roadmap">RoadMap</button></span>
+  <span><button mat-raised-button color="accent" routerLink="events">Upcomming Events</button></span>
+  <span><button mat-raised-button color="accent" routerLink="communities">Communities</button></span>
+  <span><button mat-raised-button color="accent" routerLink="references">Best Tutorial References</button></span>
 </mat-toolbar-row>
 
 </mat-toolbar>
