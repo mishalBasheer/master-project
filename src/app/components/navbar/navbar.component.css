@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  background-color: transparent;
+  height: 3rem;
+}
+span {
+  margin-left: 1rem;
+}
+nav{
+  position: fixed;
+  width: 100%;
+}
+
+ 
