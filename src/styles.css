@@ -9,5 +9,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+  background-color: #303030;
 }

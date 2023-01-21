@@ -1,7 +1,8 @@
 .home-banner{
+    display: flex;
     height: 900px;
     min-height: 900px;
 }
-app-login-form{
-    
+.home-banner div{
+    flex: 1;
 }

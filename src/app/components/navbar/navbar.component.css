@@ -2,15 +2,16 @@
   flex: 1 1 auto;
 }
 mat-toolbar {
-  background-color: transparent;
   height: 3rem;
 }
 span {
   margin-left: 1rem;
 }
-nav{
-  position: fixed;
-  width: 100%;
+mat-toolbar{
+  min-height: 6rem;
 }
-
+.bottomNav{
+  background-color: #303030;
+  color: white;
+}
  

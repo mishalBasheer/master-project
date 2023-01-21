@@ -1,10 +1,17 @@
-<nav [ngStyle]="navBg">
-<mat-toolbar>
-  <span>Name_of_Website</span>
+<mat-toolbar color="primary">
+<mat-toolbar-row class="topNavRow">
+  <span class="font-extrabold">DAMN-CODE</span>
   <span class="example-spacer"></span>
   <span routerLink="home"><button>Home</button></span>
   <span routerLink="services"><button>Services</button></span>
   <span routerLink="contact"><button>Contact Us</button></span>
   <span routerLink="team"><button>Team</button></span>
+</mat-toolbar-row>
+<mat-toolbar-row class="bottomNav" fxLayout="row-reverse">
+  <span><button mat-raised-button color="accent">Freelancers</button></span>
+  <span><button mat-raised-button color="accent">Quiz</button></span>
+  <span><button mat-raised-button color="accent">Rank Tables</button></span>
+  <span><button mat-raised-button color="accent">Tutorials</button></span>
+</mat-toolbar-row>
+
 </mat-toolbar>
-</nav> 

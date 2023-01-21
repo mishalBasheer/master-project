@@ -1,6 +1,12 @@
-<div
-  id="home-banner"
-  [ngStyle]="{ background: 'url(' + backgroundUrl + ') no-repeat 0 0 / cover' }"
->
-<app-login-form></app-login-form>
+<div id="home-banner" fxLayout fxLayoutAlign="space-around">
+  <div fxLayout fxLayoutAlign="center center">
+    <span class="mat-display-1 text-white max-w-md"
+      >Any landing page text comes here Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. At, quia illo. Error doloremque vitae, reprehenderit
+      iste ipsum quisquam sunt</span
+    >
+  </div>
+  <div>
+    <app-login-form></app-login-form>
+  </div>
 </div>
