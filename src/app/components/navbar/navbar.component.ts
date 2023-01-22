@@ -1,4 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { UserDetailsService } from 'src/app/services/user-details.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +8,23 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  constructor() {}
-  ngOnInit(): void {}
+  userIsAuthenticted!: boolean;
+  private isAuthListenerSub!: Subscription;
+  constructor(private loginService: UserDetailsService) {}
+
+  ngOnInit(): void {
+    this.userIsAuthenticted = this.loginService.getIsAuth();
+    this.isAuthListenerSub = this.loginService
+      .getIsAuthListener()
+      .subscribe((isAuth) => {
+        this.userIsAuthenticted = isAuth;
+      });
+  }
+  onLogout() {
+    this.userIsAuthenticted = false;
+    this.loginService.logout();
+  }
+  ngOnDestroy(): void {
+    this.isAuthListenerSub.unsubscribe();
+  }
 }

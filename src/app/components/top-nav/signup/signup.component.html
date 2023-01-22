@@ -3,7 +3,7 @@
       <mat-card-header>
         <mat-card-title>Register</mat-card-title>
       </mat-card-header>
-      <form class="example-form" (submit)="onAddUser(userForm)" #userForm="ngForm" fxLayout="column" fxLayoutAlign="center center">
+      <form class="example-form" (submit)="onAddUser(userForm)" #userForm="ngForm" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
         <mat-card-content>
           <mat-form-field class="example-full-width">
             <input 
@@ -48,6 +48,12 @@
           type="submit"
         >
           Submit
+        </button>
+        <button
+          mat-raised-button color="primary"
+          routerLink="/login"
+        >
+          Already Have an Account
         </button>
       </form>
     </mat-card>

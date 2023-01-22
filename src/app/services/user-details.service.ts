@@ -56,7 +56,7 @@ export class UserDetailsService {
           this.isAuthenticated = true;
           this.isAuthListener.next(true);
           //navigated to home after successfull login
-          this.router.navigateByUrl('/home');
+          this.router.navigateByUrl('/');
         }
       });
   }

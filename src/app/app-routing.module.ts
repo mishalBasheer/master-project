@@ -8,13 +8,17 @@ import { RankListComponent } from './components/bottom-nav/rank-list/rank-list.c
 import { ReferencesComponent } from './components/bottom-nav/references/references.component';
 import { RoadmapComponent } from './components/bottom-nav/roadmap/roadmap.component';
 import { ContactComponent } from './components/top-nav/contact/contact.component';
+import { LoginComponent } from './components/top-nav/login/login.component';
 import { ServicesComponent } from './components/top-nav/services/services.component';
+import { SignupComponent } from './components/top-nav/signup/signup.component';
 import { TeamComponent } from './components/top-nav/team/team.component';
 import { UserHomeComponent } from './components/top-nav/user-home/user-home.component';
 import { AuthGuard } from './route-guard/auth-guard';
 
 const routes: Routes = [
   {path:'',component:UserHomeComponent},
+  {path:'login',component:LoginComponent},
+  {path:'signup',component:SignupComponent},
   {path:'services',component:ServicesComponent},
   {path:'contact',component:ContactComponent},
   {path:'team',component:TeamComponent},

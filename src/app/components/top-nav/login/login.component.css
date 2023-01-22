@@ -1,0 +1,15 @@
+mat-form-field {
+    display: block;
+  }
+  .login-wrapper{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .box {
+    padding: 3rem;
+    width: 25%;
+  }
+  .example-full-width{
+      width: 100%;
+  }

@@ -14,7 +14,6 @@ import { UserHomeComponent } from './components/top-nav/user-home/user-home.comp
 import { ServicesComponent } from './components/top-nav/services/services.component';
 import { ContactComponent } from './components/top-nav/contact/contact.component';
 import { TeamComponent } from './components/top-nav/team/team.component';
-import { LoginFormComponent } from './components/reusable/login-form/login-form.component';
 import { ReferencesComponent } from './components/bottom-nav/references/references.component';
 import { CommunitiesComponent } from './components/bottom-nav/communities/communities.component';
 import { EventsComponent } from './components/bottom-nav/events/events.component';
@@ -23,6 +22,8 @@ import { RankListComponent } from './components/bottom-nav/rank-list/rank-list.c
 import { QuizComponent } from './components/bottom-nav/quiz/quiz.component';
 import { FreelancersComponent } from './components/bottom-nav/freelancers/freelancers.component';
 import { ImageCardComponent } from './components/reusable/image-card/image-card.component';
+import { SignupComponent } from './components/top-nav/signup/signup.component';
+import { LoginComponent } from './components/top-nav/login/login.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,6 @@ import { ImageCardComponent } from './components/reusable/image-card/image-card.
     ServicesComponent,
     ContactComponent,
     TeamComponent,
-    LoginFormComponent,
     ReferencesComponent,
     CommunitiesComponent,
     EventsComponent,
@@ -41,6 +41,8 @@ import { ImageCardComponent } from './components/reusable/image-card/image-card.
     QuizComponent,
     FreelancersComponent,
     ImageCardComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

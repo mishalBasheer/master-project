@@ -6,3 +6,6 @@
 .home-banner div{
     flex: 1;
 }
+.hero-img{
+    width: 20rem;
+}

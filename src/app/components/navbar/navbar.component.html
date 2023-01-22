@@ -6,6 +6,8 @@
   <span routerLink="/services"><button mat-button color="accent">Services</button></span>
   <span routerLink="/contact"><button mat-button color="accent">Contact Us</button></span>
   <span routerLink="/team"><button mat-button color="accent">Team</button></span>
+  <span routerLink="/signup" *ngIf="!userIsAuthenticted"><button mat-raised-button color="warn">SignUp</button></span>
+  <span><button mat-raised-button color="primary" (click)="onLogout()" *ngIf="userIsAuthenticted">Logout</button></span>
 </mat-toolbar-row>
 <mat-toolbar-row class="bottomNav" fxLayout="row-reverse">
   <span><button mat-raised-button color="accent" routerLink="/freelancers">Freelancers</button></span>
