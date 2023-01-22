@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserDetailsService } from './services/user-details.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'master-project';
+  constructor(private userLoginData: UserDetailsService) {}
+  ngOnInit(): void {
+    //auto authentication is done in ngOnInit
+    //while refreshing the page this function will trigger
+    this.userLoginData.autoAuthUser();
+  }
 }
