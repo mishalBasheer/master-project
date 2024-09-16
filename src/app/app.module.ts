@@ -10,11 +10,20 @@ import { AuthInterceptor } from './interceptor/auth-interceptor';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { UserHomeComponent } from './components/user-home/user-home.component';
-import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { TeamComponent } from './components/team/team.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
+import { UserHomeComponent } from './components/top-nav/user-home/user-home.component';
+import { ServicesComponent } from './components/top-nav/services/services.component';
+import { ContactComponent } from './components/top-nav/contact/contact.component';
+import { TeamComponent } from './components/top-nav/team/team.component';
+import { ReferencesComponent } from './components/bottom-nav/references/references.component';
+import { CommunitiesComponent } from './components/bottom-nav/communities/communities.component';
+import { EventsComponent } from './components/bottom-nav/events/events.component';
+import { RoadmapComponent } from './components/bottom-nav/roadmap/roadmap.component';
+import { RankListComponent } from './components/bottom-nav/rank-list/rank-list.component';
+import { QuizComponent } from './components/bottom-nav/quiz/quiz.component';
+import { FreelancersComponent } from './components/bottom-nav/freelancers/freelancers.component';
+import { ImageCardComponent } from './components/reusable/image-card/image-card.component';
+import { SignupComponent } from './components/top-nav/signup/signup.component';
+import { LoginComponent } from './components/top-nav/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +33,16 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     ServicesComponent,
     ContactComponent,
     TeamComponent,
-    LoginFormComponent,
+    ReferencesComponent,
+    CommunitiesComponent,
+    EventsComponent,
+    RoadmapComponent,
+    RankListComponent,
+    QuizComponent,
+    FreelancersComponent,
+    ImageCardComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

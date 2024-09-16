@@ -1,0 +1,50 @@
+<div class="login-wrapper">
+  <mat-card class="box" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <form
+      class="example-form"
+      (submit)="onLogin(userForm)"
+      #userForm="ngForm"
+      fxLayout="column"
+      fxLayoutGap="10px"
+      fxLayoutAlign="center center"
+    >
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            type="number"
+            placeholder="Mobile"
+            name="mobile"
+            ngModel
+            #mobileInput="ngModel"
+            required
+            minlength="6"
+          />
+          <mat-error *ngIf="mobileInput.invalid"
+            >Please Enter a valid mobile</mat-error
+          >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter your password</mat-label>
+          <input
+            matInput
+            type="password"
+            name="password"
+            ngModel
+            #passwordInput="ngModel"
+            required
+            minlength="6"
+          />
+          <mat-error *ngIf="passwordInput.invalid"
+            >Please enter a Strong password</mat-error
+          >
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+      <button mat-raised-button color="primary" routerLink="/signup">New User</button>
+    </form>
+  </mat-card>
+</div>
